@@ -2,15 +2,15 @@
  * @param { import("knex").Knex } knex
  * @returns { Promise<void> }
  */
-exports.seed = async function (knex) {
+export async function seed(knex) {
   // Deletes ALL existing entries
   await knex("cuisines").del();
   await knex("cuisines").insert([
-    { id: 1, cuisine: "Italian" },
-    { id: 2, cuisine: "American" },
-    { id: 3, cuisine: "Greek" },
-    { id: 4, cuisine: "Chinese" },
-    { id: 5, cuisine: "Korean" },
-    { id: 6, cuisine: "Japanese" },
+    { id: 1, name: "Italian" },
+    { id: 2, name: "American" },
+    { id: 3, name: "Greek" },
+    { id: 4, name: "Chinese" },
+    { id: 5, name: "Korean" },
+    { id: 6, name: "Japanese" },
   ]);
-};
+}
