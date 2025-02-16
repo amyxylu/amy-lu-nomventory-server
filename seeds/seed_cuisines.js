@@ -6,11 +6,11 @@ export async function seed(knex) {
   // Deletes ALL existing entries
   await knex("cuisines").del();
   await knex("cuisines").insert([
-    { id: 1, name: "Italian" },
-    { id: 2, name: "American" },
-    { id: 3, name: "Greek" },
-    { id: 4, name: "Chinese" },
-    { id: 5, name: "Korean" },
-    { id: 6, name: "Japanese" },
+    { id: 1, cuisine_name: "Italian" },
+    { id: 2, cuisine_name: "American" },
+    { id: 3, cuisine_name: "Greek" },
+    { id: 4, cuisine_name: "Chinese" },
+    { id: 5, cuisine_name: "Korean" },
+    { id: 6, cuisine_name: "Japanese" },
   ]);
 }
