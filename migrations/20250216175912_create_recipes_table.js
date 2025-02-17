@@ -8,6 +8,7 @@ export function up(knex) {
     table.string("recipe_name").notNullable();
     table.text("description").notNullable();
     table.string("difficulty_level", 10).notNullable(); // Easy, Medium, Hard
+    table.integer("prep_time").unsigned().notNullable();
     table.integer("cook_time").unsigned().notNullable(); // Minutes
     table.integer("servings").unsigned().notNullable();
     table.text("instructions").notNullable();
