@@ -14,11 +14,13 @@ import ingredientsRoutes from "./routes/ingredients-routes.js";
 import categoriesRoutes from "./routes/categories-routes.js";
 import cuisinesRoutes from "./routes/cuisines-routes.js";
 import recipesRoutes from "./routes/recipes-routes.js";
+import filtersRoutes from "./routes/filters-routes.js";
 
 app.use("/api/ingredients", ingredientsRoutes);
 app.use("/api/categories", categoriesRoutes);
 app.use("/api/cuisines", cuisinesRoutes);
 app.use("/api/recipes", recipesRoutes);
+app.use("/api/filters", filtersRoutes);
 
 app.get("/", (req, res) => {
   res.send("Express is running!");
