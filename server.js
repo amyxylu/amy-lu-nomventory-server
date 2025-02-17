@@ -10,6 +10,10 @@ app.use(cors({ origin: CORS_ORIGIN }));
 app.use(express.json());
 app.use("/images", express.static("public/images"));
 
+import ingredientsRoutes from "./routes/ingredients-routes.js";
+
+app.use("/api/ingredients", ingredientsRoutes);
+
 app.get("/", (req, res) => {
   res.send("Express is running!");
 });
