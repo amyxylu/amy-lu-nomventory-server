@@ -6,8 +6,9 @@ const app = express();
 
 const { PORT, CORS_ORIGIN } = process.env;
 
-app.use(cors({ CORS_ORIGIN }));
+app.use(cors({ origin: CORS_ORIGIN }));
 app.use(express.json());
+app.use("/images", express.static("public/images"));
 
 app.get("/", (req, res) => {
   res.send("Express is running!");
@@ -15,5 +16,5 @@ app.get("/", (req, res) => {
 
 app.listen(PORT, function () {
   console.log(`listening on port ${PORT}`);
-  console.log(CORS_ORIGIN);
+  console.log(`CORS_ORIGIN: ${CORS_ORIGIN}`);
 });
