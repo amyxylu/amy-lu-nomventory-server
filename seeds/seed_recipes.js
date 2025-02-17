@@ -6,6 +6,7 @@ export async function seed(knex) {
   // Deletes ALL existing entries
   await knex("recipes").del();
   await knex("recipes").insert([
+    // Italian Recipes
     {
       id: 1,
       recipe_name: "Spaghetti Carbonara",
@@ -101,7 +102,7 @@ export async function seed(knex) {
       cuisine_id: 1,
     },
 
-    // 🍔 American Recipes
+    // American Recipes
     {
       id: 6,
       recipe_name: "Chicken Noodle Soup",
@@ -199,7 +200,7 @@ export async function seed(knex) {
       cuisine_id: 2,
     },
 
-    // 🌮 Mexican Recipes
+    // Mexican Recipes
     {
       id: 11,
       recipe_name: "Fish Tacos",
@@ -386,6 +387,8 @@ export async function seed(knex) {
       image_url: "/images/dan_dan_noodles.jpg",
       cuisine_id: 4,
     },
+
+    // Korean Recipes
     {
       id: 21,
       recipe_name: "Soft Tofu Stew with Seafood (Sundubu Jjigae)",
@@ -482,6 +485,8 @@ export async function seed(knex) {
       image_url: "images/japchae.jpg",
       cuisine_id: 5,
     },
+
+    // Japanese Recipes
     {
       id: 26,
       recipe_name: "Katsu Curry",
