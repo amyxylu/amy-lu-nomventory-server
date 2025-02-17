@@ -22,7 +22,7 @@ export async function seed(knex) {
         "4. **Combine everything**: Add hot spaghetti to the pancetta pan, mix, then slowly pour in the egg mixture while stirring vigorously to prevent scrambling.\n" +
         "5. **Adjust consistency**: Add reserved pasta water gradually to create a creamy sauce.\n" +
         "6. **Serve immediately** with extra Pecorino Romano and black pepper on top.",
-      image_url: "spaghetti_carbonara.jpg",
+      image_url: "/images/spaghetti_carbonara.jpg",
       cuisine_id: 1,
     },
     {
@@ -41,7 +41,7 @@ export async function seed(knex) {
         "4. **Combine**: Add meatballs to the sauce and simmer for another 15 minutes until cooked through.\n" +
         "5. **Cook the spaghetti**: Boil salted water and cook spaghetti until al dente. Drain and mix with sauce.\n" +
         "6. **Serve hot** with extra Parmesan cheese.",
-      image_url: "spaghetti_meatballs.jpg",
+      image_url: "/images/spaghetti_meatballs.jpg",
       cuisine_id: 1,
     },
     {
@@ -60,7 +60,7 @@ export async function seed(knex) {
         "4. **Top with cheese**: Add slices of fresh mozzarella.\n" +
         "5. **Bake**: Transfer to a preheated oven and bake for 10-12 minutes until the crust is golden and cheese is bubbly.\n" +
         "6. **Garnish & serve**: Remove from the oven, top with fresh basil, drizzle with olive oil, and serve hot.",
-      image_url: "margherita_pizza.jpg",
+      image_url: "/images/margherita_pizza.jpg",
       cuisine_id: 1,
     },
     {
@@ -78,7 +78,7 @@ export async function seed(knex) {
         "3. **Toast the bread**: Slice a baguette or Italian bread into pieces. Brush with olive oil and toast in a pan or oven at 375°F (190°C) for 5 minutes until golden and crispy.\n" +
         "4. **Assemble the bruschetta**: Spoon the tomato mixture onto each toasted bread slice.\n" +
         "5. **Finish with garnish**: Drizzle with balsamic vinegar (optional) and serve immediately.",
-      image_url: "bruschetta.jpg",
+      image_url: "/images/bruschetta.jpg",
       cuisine_id: 1,
     },
     {
@@ -97,7 +97,7 @@ export async function seed(knex) {
         "5. **Layer the lasagna**: In a baking dish, spread a thin layer of meat sauce, followed by pasta sheets, ricotta mixture, shredded mozzarella, and more sauce. Repeat layers until full.\n" +
         "6. **Bake at 375°F (190°C) for 40 minutes** until cheese is bubbly and golden.\n" +
         "7. **Rest and serve**: Let lasagna sit for 10 minutes before slicing. Garnish with fresh basil and enjoy.",
-      image_url: "lasagna.jpg",
+      image_url: "/images/lasagna.jpg",
       cuisine_id: 1,
     },
 
@@ -117,7 +117,7 @@ export async function seed(knex) {
         "3. **Sauté vegetables**: In a separate pan, sauté diced onions, carrots, and celery in butter until softened. Add to the broth.\n" +
         "4. **Cook noodles**: Add egg noodles and cook for 8-10 minutes until tender.\n" +
         "5. **Finish and serve**: Adjust seasoning, remove bay leaf, and serve hot.",
-      image_url: "chicken_noodle_soup.jpg",
+      image_url: "/images/chicken_noodle_soup.jpg",
       cuisine_id: 2,
     },
     {
@@ -135,7 +135,7 @@ export async function seed(knex) {
         "3. **Assemble the salad**: Toss chopped romaine lettuce with Caesar dressing.\n" +
         "4. **Add toppings**: Sprinkle with grated Parmesan cheese and croutons.\n" +
         "5. **Serve immediately**.",
-      image_url: "caesar_salad.jpg",
+      image_url: "/images/caesar_salad.jpg",
       cuisine_id: 2,
     },
     {
@@ -154,7 +154,7 @@ export async function seed(knex) {
         "4. **Toast the bun**: Lightly butter and toast the hamburger bun.\n" +
         "5. **Assemble the burger**: Place lettuce, tomato, pickles, and the cooked patty in the bun.\n" +
         "6. **Serve with ketchup, mustard, and mayonnaise**.",
-      image_url: "cheeseburger.jpg",
+      image_url: "/images/cheeseburger.jpg",
       cuisine_id: 2,
     },
     {
@@ -173,7 +173,7 @@ export async function seed(knex) {
         "5. **Assemble the toast**: Spread the mashed avocado evenly on the toasted bread.\n" +
         "6. **Add toppings (optional)**: Sprinkle with red pepper flakes, feta cheese, cherry tomatoes, or a poached egg for extra flavor.\n" +
         "7. **Serve immediately** and enjoy!",
-      image_url: "avocado_toast.jpg",
+      image_url: "/images/avocado_toast.jpg",
       cuisine_id: 2,
     },
     {
@@ -195,7 +195,7 @@ export async function seed(knex) {
         "8. **Add the lobster meat**: Stir in the chopped lobster meat, heavy cream, and a pinch of paprika.\n" +
         "9. **Simmer for 5 minutes** to allow flavors to blend.\n" +
         "10. **Serve hot** with a drizzle of melted butter and a sprinkle of fresh herbs on top.",
-      image_url: "lobster_bisque.jpg",
+      image_url: "/images/lobster_bisque.jpg",
       cuisine_id: 2,
     },
 
@@ -215,7 +215,7 @@ export async function seed(knex) {
         "3. **Make the slaw**: Mix shredded cabbage, lime juice, and cilantro.\n" +
         "4. **Assemble tacos**: Place fish in corn tortillas, top with slaw, and drizzle with sauce.\n" +
         "5. **Serve with lime wedges**.",
-      image_url: "fish_tacos.jpg",
+      image_url: "/images/fish_tacos.jpg",
       cuisine_id: 3,
     },
     {
@@ -232,7 +232,7 @@ export async function seed(knex) {
         "2. **Add flavors**: Mix in diced onions, tomatoes, cilantro, lime juice, and salt.\n" +
         "3. **Adjust seasoning**: Add black pepper and optional jalapeño for spice.\n" +
         "4. **Serve immediately** with tortilla chips or as a topping.",
-      image_url: "guacamole.jpg",
+      image_url: "/images/guacamole.jpg",
       cuisine_id: 3,
     },
     {
@@ -250,7 +250,7 @@ export async function seed(knex) {
         "3. **Add vegetables**: Mix in diced tomatoes, onions, cilantro, and jalapeños.\n" +
         "4. **Season**: Add salt, black pepper, and optional avocado.\n" +
         "5. **Serve chilled** with tostadas or tortilla chips.",
-      image_url: "ceviche.jpg",
+      image_url: "/images/ceviche.jpg",
       cuisine_id: 3,
     },
     {
@@ -268,7 +268,7 @@ export async function seed(knex) {
         "3. **Cook pork**: Grill or pan-fry until charred and cooked through.\n" +
         "4. **Slice and serve**: Cut pork into small pieces, place in corn tortillas, and top with grilled pineapple, onion, and cilantro.\n" +
         "5. **Serve with lime wedges**.",
-      image_url: "tacos_al_pastor.jpg",
+      image_url: "/images/tacos_al_pastor.jpg",
       cuisine_id: 3,
     },
     {
@@ -287,7 +287,7 @@ export async function seed(knex) {
         "4. **Add sauce**: Pour enchilada sauce over tortillas and sprinkle with cheese.\n" +
         "5. **Bake at 375°F (190°C) for 20 minutes** until cheese is melted and bubbly.\n" +
         "6. **Serve hot** with sour cream and fresh cilantro.",
-      image_url: "chicken_enchiladas.jpg",
+      image_url: "/images/chicken_enchiladas.jpg",
       cuisine_id: 3,
     },
     {
@@ -306,7 +306,7 @@ export async function seed(knex) {
         "4. **Add the rice**: Stir in day-old cooked rice, breaking up any clumps.\n" +
         "5. **Season and finish**: Add soy sauce, sesame oil, and salt. Toss in the scrambled eggs and mix well.\n" +
         "6. **Garnish & serve**: Sprinkle with chopped green onions and serve hot.",
-      image_url: "fried_rice.jpg",
+      image_url: "/images/fried_rice.jpg",
       cuisine_id: 4,
     },
     {
@@ -326,7 +326,7 @@ export async function seed(knex) {
         "5. **Add the tofu**: Gently stir in tofu cubes, being careful not to break them.\n" +
         "6. **Thicken the sauce**: Dissolve cornstarch in water, add to the pan, and stir until thickened.\n" +
         "7. **Garnish & serve**: Top with chopped green onions and serve with steamed rice.",
-      image_url: "mapo_tofu.jpg",
+      image_url: "/images/mapo_tofu.jpg",
       cuisine_id: 4,
     },
     {
@@ -345,7 +345,7 @@ export async function seed(knex) {
         "4. **Simmer the soup**: Pour in beef broth and tomato paste, and add bay leaves. Simmer for 1.5 hours.\n" +
         "5. **Season to taste**: Add salt, black pepper, Worcestershire sauce, and vinegar for a balanced flavor.\n" +
         "6. **Serve hot** with a side of bread or rice.",
-      image_url: "hong_kong_borscht.jpg",
+      image_url: "/images/hong_kong_borscht.jpg",
       cuisine_id: 4,
     },
     {
@@ -364,7 +364,7 @@ export async function seed(knex) {
         "4. **Sauté the aromatics**: In the same pan, cook dried red chilies, garlic, and ginger until fragrant.\n" +
         "5. **Add sauce and peanuts**: Pour in the prepared sauce, add back the chicken, and toss in roasted peanuts.\n" +
         "6. **Garnish & serve**: Sprinkle with green onions and serve with rice.",
-      image_url: "kung_pao_chicken.jpg",
+      image_url: "/images/kung_pao_chicken.jpg",
       cuisine_id: 4,
     },
     {
@@ -383,7 +383,7 @@ export async function seed(knex) {
         "4. **Assemble the dish**: Divide noodles into bowls and pour the sauce over them.\n" +
         "5. **Add toppings**: Spoon cooked pork over the noodles and top with chopped peanuts and green onions.\n" +
         "6. **Mix well & serve**.",
-      image_url: "dan_dan_noodles.jpg",
+      image_url: "/images/dan_dan_noodles.jpg",
       cuisine_id: 4,
     },
     {
@@ -402,7 +402,7 @@ export async function seed(knex) {
         "4. **Season the stew**: Stir in soy sauce, fish sauce, and salt to taste. Let simmer for 5 minutes.\n" +
         "5. **Finish with an egg**: Crack an egg on top and let it poach gently in the broth.\n" +
         "6. **Serve hot** with steamed rice and garnish with chopped green onions.",
-      image_url: "soft_tofu_stew.jpg",
+      image_url: "/images/korean_soft_tofu_stew.jpg",
       cuisine_id: 5,
     },
     {
@@ -421,7 +421,7 @@ export async function seed(knex) {
         "4. **Season the stew**: Stir in gochugaru, soy sauce, and sugar. Simmer for 20 minutes.\n" +
         "5. **Add tofu**: Slice tofu into thick pieces and gently add to the stew. Let simmer for another 5 minutes.\n" +
         "6. **Serve hot** with steamed rice and garnish with green onions.",
-      image_url: "kimchi_stew.jpg",
+      image_url: "/images/korean_kimchi_stew.jpg",
       cuisine_id: 5,
     },
     {
@@ -441,7 +441,7 @@ export async function seed(knex) {
         "5. **Simmer the sauce**: Pour in water or broth, add sugar, and let simmer for 10 minutes.\n" +
         "6. **Thicken the sauce**: Stir in cornstarch slurry and mix until thickened.\n" +
         "7. **Serve over noodles** and garnish with julienned cucumber.",
-      image_url: "jjajangmyeon.jpg",
+      image_url: "images/jjajangmyeon.jpg",
       cuisine_id: 5,
     },
     {
@@ -460,7 +460,7 @@ export async function seed(knex) {
         "4. **Assemble the bowl**: Place steamed rice in a bowl and arrange vegetables and beef on top.\n" +
         "5. **Fry an egg**: Cook a sunny-side-up egg and place it in the center of the bowl.\n" +
         "6. **Drizzle with sauce** and mix everything together before eating.",
-      image_url: "bibimbap.jpg",
+      image_url: "images/bibimbap.jpg",
       cuisine_id: 5,
     },
     {
@@ -479,7 +479,7 @@ export async function seed(knex) {
         "4. **Stir-fry the vegetables**: In a pan, heat oil and cook carrots, onions, and bell peppers for 3 minutes.\n" +
         "5. **Combine everything**: In a large bowl, toss the noodles with vegetables, beef, and sesame oil.\n" +
         "6. **Season & serve**: Add soy sauce, sesame seeds, and black pepper. Serve warm or at room temperature.",
-      image_url: "japchae.jpg",
+      image_url: "images/japchae.jpg",
       cuisine_id: 5,
     },
     {
@@ -498,7 +498,7 @@ export async function seed(knex) {
         "4. **Make the curry**: In a pot, sauté diced onions, carrots, and potatoes until soft. Add Japanese curry roux and water, then simmer for 15 minutes.\n" +
         "5. **Assemble the dish**: Slice the pork cutlet and serve over steamed rice with curry sauce poured on top.\n" +
         "6. **Garnish and serve** with pickled radish or fukujinzuke (Japanese pickles).",
-      image_url: "katsu_curry.jpg",
+      image_url: "images/katsu_curry.jpg",
       cuisine_id: 6,
     },
     {
@@ -517,7 +517,7 @@ export async function seed(knex) {
         "4. **Prepare toppings**: Slice green onions, soft-boil an egg, and prepare corn, bean sprouts, and chashu pork (if using).\n" +
         "5. **Assemble the ramen bowl**: Divide noodles into bowls, pour hot broth over them, and add toppings.\n" +
         "6. **Garnish & serve** with a drizzle of chili oil and sesame seeds.",
-      image_url: "miso_ramen.jpg",
+      image_url: "images/miso_ramen.jpg",
       cuisine_id: 6,
     },
     {
@@ -535,7 +535,7 @@ export async function seed(knex) {
         "3. **Assemble the roll**: Place a sheet of nori (seaweed) on a bamboo sushi mat, spread a thin layer of rice on top, and arrange salmon and avocado along the edge.\n" +
         "4. **Roll the sushi**: Using the bamboo mat, tightly roll the sushi into a cylinder and seal with water.\n" +
         "5. **Slice and serve**: Cut the roll into bite-sized pieces and serve with soy sauce, wasabi, and pickled ginger.",
-      image_url: "salmon_avocado_roll.jpg",
+      image_url: "images/salmon_avocado_roll.jpg",
       cuisine_id: 6,
     },
     {
@@ -553,7 +553,7 @@ export async function seed(knex) {
         "3. **Cook the pancake**: Heat oil in a pan and pour the batter into a round shape. Cook for 3-4 minutes per side until golden brown.\n" +
         "4. **Add toppings**: Drizzle with okonomiyaki sauce and Japanese mayonnaise. Sprinkle with bonito flakes and nori powder.\n" +
         "5. **Serve hot** and enjoy!",
-      image_url: "okonomiyaki.jpg",
+      image_url: "images/okonomiyaki.jpg",
       cuisine_id: 6,
     },
     {
@@ -572,7 +572,7 @@ export async function seed(knex) {
         "4. **Prepare the rice**: Scoop steamed rice into serving bowls.\n" +
         "5. **Assemble the dish**: Pour the chicken and egg mixture over the rice.\n" +
         "6. **Garnish & serve** with chopped green onions and a sprinkle of nori.",
-      image_url: "oyakodon.jpg",
+      image_url: "images/oyakodon.jpg",
       cuisine_id: 6,
     },
   ]);
