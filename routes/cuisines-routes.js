@@ -1,7 +1,7 @@
 import express from "express";
 const router = express.Router();
 
-import { getCuisines } from "../controllers/cuisines-controllers.js";
+import { getCuisines } from "../controllers/cuisines-controller.js";
 
 router.route("/").get(getCuisines);
 
