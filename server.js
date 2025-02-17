@@ -11,8 +11,10 @@ app.use(express.json());
 app.use("/images", express.static("public/images"));
 
 import ingredientsRoutes from "./routes/ingredients-routes.js";
+import categoriesRoutes from "./routes/categories-routes.js";
 
 app.use("/api/ingredients", ingredientsRoutes);
+app.use("/api/categories", categoriesRoutes);
 
 app.get("/", (req, res) => {
   res.send("Express is running!");
