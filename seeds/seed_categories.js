@@ -13,8 +13,10 @@ export async function seed(knex) {
     { id: 5, category_name: "Vegetables" },
     { id: 6, category_name: "Fruits" },
     { id: 7, category_name: "Pantry" },
-    { id: 8, category_name: "Seasoning & Spices" },
-    { id: 9, category_name: "Sauces & Condiments" },
+    { id: 8, category_name: "Seasoning & Herbs" },
+    { id: 9, category_name: "Condiments & Sauces" },
     { id: 10, category_name: "Oils & Fats" },
+    { id: 11, category_name: "Grains" },
+    { id: 12, category_name: "Other" },
   ]);
 }
