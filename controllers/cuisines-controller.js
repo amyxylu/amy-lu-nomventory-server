@@ -12,6 +12,27 @@ async function getCuisines(_req, res) {
   }
 }
 
+async function getCuisineById(req, res) {
+  try {
+    const { id } = req.params;
+
+    if (isNaN(id)) {
+      return res.status(400).json({ error: "Invalid cuisine ID" });
+    }
+
+    const cuisine = await knex("cuisines").where("id", id).first();
+
+    if (!cuisine) {
+      return res.status(404).json({ error: "Cuisine not found" });
+    }
+
+    res.json(cuisine);
+  } catch (err) {
+    console.error("Error fetching cuisine:", err);
+    res.status(500).json({ error: "Error fetching cuisine" });
+  }
+}
+
 async function getRecipesByCuisine(req, res) {
   try {
     const { id } = req.params;
@@ -29,4 +50,4 @@ async function getRecipesByCuisine(req, res) {
   }
 }
 
-export { getCuisines, getRecipesByCuisine };
+export { getCuisines, getCuisineById, getRecipesByCuisine };
