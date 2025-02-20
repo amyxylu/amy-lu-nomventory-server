@@ -33,4 +33,34 @@ async function getRecipeById(req, res) {
   }
 }
 
-export { getAllRecipes, getRecipeById };
+async function getIngredientsByRecipeId(req, res) {
+  try {
+    const { id } = req.params;
+
+    if (isNaN(id)) {
+      return res.status(400).json({ error: "Invalid recipe ID" });
+    }
+
+    const ingredients = await knex("recipes_ingredients")
+      .join(
+        "ingredients",
+        "recipes_ingredients.ingredient_id",
+        "ingredients.id"
+      )
+      .select("ingredients.ingredient_name", "recipes_ingredients.quantity")
+      .where("recipes_ingredients.recipe_id", id);
+
+    if (ingredients.length === 0) {
+      return res
+        .status(404)
+        .json({ error: "No ingredients found for this recipe" });
+    }
+
+    res.json(ingredients);
+  } catch (err) {
+    console.error("Error fetching ingredients:", err);
+    res.status(500).json({ error: "Error fetching ingredients" });
+  }
+}
+
+export { getAllRecipes, getRecipeById, getIngredientsByRecipeId };
