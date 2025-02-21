@@ -39,10 +39,29 @@ async function filterRecipes(req, res) {
     }
 
     const matchedRecipes = await query;
-    res.json(matchedRecipes);
+
+    const recipeIds = matchedRecipes.map((recipe) => recipe.id);
+    const totalIngredients = await knex("recipes_ingredients")
+      .whereIn("recipe_id", recipeIds)
+      .groupBy("recipe_id")
+      .select("recipe_id")
+      .countDistinct("ingredient_id as total_ingredients");
+
+    const recipesWithMatchPercentage = matchedRecipes.map((recipe) => {
+      const total =
+        totalIngredients.find((t) => t.recipe_id === recipe.id)
+          ?.total_ingredients || 1;
+      return {
+        ...recipe,
+        match_percentage: Math.round((recipe.match_count / total) * 100), // Calculate percentage
+      };
+    });
+
+    res.json(recipesWithMatchPercentage);
   } catch (err) {
     console.error("Error filtering recipes:", err);
     res.status(500).json({ error: "Error filtering recipes" });
   }
 }
+
 export { filterRecipes };
