@@ -24,7 +24,9 @@ export function up(knex) {
       .onUpdate("CASCADE")
       .onDelete("CASCADE");
 
-    table.string("quantity").notNullable();
+    table.decimal("quantity", 8, 2).notNullable();
+    table.string("unit").nullable();
+    table.string("descriptor").nullable();
 
     table.timestamps(true, true);
   });
