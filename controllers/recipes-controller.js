@@ -47,7 +47,18 @@ async function getIngredientsByRecipeId(req, res) {
         "recipes_ingredients.ingredient_id",
         "ingredients.id"
       )
-      .select("ingredients.ingredient_name", "recipes_ingredients.quantity")
+      .select(
+        "ingredients.ingredient_name",
+        knex.raw(`
+          CASE 
+            WHEN FLOOR(recipes_ingredients.quantity) = recipes_ingredients.quantity 
+            THEN CAST(recipes_ingredients.quantity AS SIGNED) 
+            ELSE recipes_ingredients.quantity 
+          END AS quantity
+        `),
+        "recipes_ingredients.unit",
+        "recipes_ingredients.descriptor"
+      )
       .where("recipes_ingredients.recipe_id", id);
 
     if (ingredients.length === 0) {
